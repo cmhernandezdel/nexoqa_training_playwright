@@ -1,13 +1,12 @@
 import {test, expect} from '@playwright/test';
 import { HomePage } from '../page_objects/home_page';
-import { AddSongPage } from '../page_objects/add_song_page';
+import { addSong } from './helper';
 
 test('Add new song', async ({page}) => {
     await page.goto('http://192.168.0.10:8080/');
-    var homePage: HomePage = new HomePage(page);
-    await homePage.addButton.click();
-    var addSongPage: AddSongPage = new AddSongPage(page);
-    await addSongPage.fillSong(
+    var homePage : HomePage = new HomePage(page);
+    await addSong(
+        page,
         "WANDA", 
         "Quevedo", 
         "Urbana", 
@@ -18,7 +17,6 @@ test('Add new song', async ({page}) => {
         "Te los aprendes :)"
         );
 
-    await addSongPage.createSongButton.click();
-    await expect(homePage.songs.last())
+    await expect(homePage.songs.last().locator('song-title')) // habria que hacer un componente mas pequeño para cada song
         .toContainText('WANDA');
 });
