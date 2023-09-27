@@ -7,7 +7,7 @@ test('Add new song', async ({page}) => {
     var homePage: HomePage = new HomePage(page);
     await homePage.addButton.click();
     var addSongPage: AddSongPage = new AddSongPage(page);
-    addSongPage.fillSong(
+    await addSongPage.fillSong(
         "WANDA", 
         "Quevedo", 
         "Urbana", 
