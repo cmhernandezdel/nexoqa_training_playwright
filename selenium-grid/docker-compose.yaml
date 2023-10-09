@@ -12,10 +12,10 @@ services:
     image: selenium/node-chrome:4.3.0-20220726
     container_name: node-chrome
     environment:
-      - SE_EVENT_BUS_HOST=[IP]
+      - SE_EVENT_BUS_HOST=172.18.10.46
       - SE_EVENT_BUS_PUBLISH_PORT=4442
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-      - SE_NODE_GRID_URL=http://[IP]:4444
+      - SE_NODE_GRID_URL=http://172.18.10.46:4444
     shm_size: "2g"
     depends_on:
       - hub
@@ -26,10 +26,10 @@ services:
       image: selenium/node-edge:4.3.0-20220726
       container_name: node-edge
       environment:
-        - SE_EVENT_BUS_HOST=[IP]
+        - SE_EVENT_BUS_HOST=172.18.10.46
         - SE_EVENT_BUS_PUBLISH_PORT=4442
         - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-        - SE_NODE_GRID_URL=http://[IP]:4444
+        - SE_NODE_GRID_URL=http://172.18.10.46:4444
       shm_size: "2g"
       depends_on:
         - hub

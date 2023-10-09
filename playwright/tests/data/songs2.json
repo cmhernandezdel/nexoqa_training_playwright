@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "title": "Nevermind",
+        "artist": "Nirvana",
+        "genre": "Alternative Rock",
+        "album": "Nevermind",
+        "albumImageUrl": "https://is3-ssl.mzstatic.com/image/thumb/Features/d0/cc/62/dj.nanioukp.jpg/268x0w.jpg",
+        "youtubeId": "m-ofL_3EZyE",
+        "lyrics": "",
+        "tab": "",
+        "createdAt": "2018-02-13T12:56:24.432Z",
+        "updatedAt": "2023-09-27T11:00:28.074Z"
+    },
+    {
+        "id": 2,
+        "title": "In the blood",
+        "artist": "John Mayer",
+        "genre": "Acoustic Rock",
+        "album": "The Search for Everything",
+        "albumImageUrl": "https://images.genius.com/a64eea0c361b6b02f4b7423adf80bb6e.1000x992x1.jpg",
+        "youtubeId": "ob-jS7bqYgI",
+        "lyrics": "",
+        "tab": "",
+        "createdAt": "2018-02-13T12:56:24.432Z",
+        "updatedAt": "2023-09-27T11:00:28.074Z"
+    }
+]

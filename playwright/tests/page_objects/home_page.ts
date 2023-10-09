@@ -9,10 +9,12 @@ export class HomePage {
     readonly page: Page
     readonly addButton: Locator
     readonly songs: Locator;
+    readonly searchInput: Locator;
 
     constructor(page: Page) {
         this.page = page;
         this.addButton = this.page.locator('a[href="#/songs/create"]'); //css selector
         this.songs = this.page.locator('div.song');
+        this.searchInput = this.page.locator('input');
     }
 }
